@@ -1,0 +1,27 @@
+:root {
+    --bgcolor: #1d1a1d;
+    --maincolor: #f39f5a;
+    --secbgcolor: #451952;
+    --textcolor: #e8bcb9;
+}
+body {
+    background: var(--bgcolor);
+    color: var(--textcolor);
+}
+p {
+    color: blue;
+}
+#nazanin {
+    color: aqua;
+}
+.nzn {
+    color: azure;
+}
+#nazanin,
+.nzn,
+h2 {
+    font-size: 18px;
+}
+.parent .child h1 {
+    text-decoration: line-through;
+}
