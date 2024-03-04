@@ -1,0 +1,26 @@
+:root {
+    --bgcolor: #000080;
+    --maincolor: #FFA500;
+    --secbgcolor: #FFFF00;
+    --textcolor: #FFFFFF;
+}
+body {
+    background: var(--bgcolor);
+    color: var(--textcolor);
+}
+h1 {
+    color:#FFFF00;
+    font-size: 28px;
+}
+#nzn {
+    font-size: 18px;
+}
+.job {
+    color: #FFFF00;
+    font-size: 16px;
+}
+h1,
+h2,
+h3 {
+    font-size: 20px;
+}
