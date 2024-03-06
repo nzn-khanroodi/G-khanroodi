@@ -1,0 +1,37 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: italic;
+    text-shadow: 3px 2px blue;
+    box-shadow: 4px 3px red;
+    
+}
+
+button {
+    border: 2px solid aqua;
+    box-shadow: 0 0 1rem aqua;
+    padding: 8px;
+    border-radius: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: aqua;
+
+}
+button:hover {
+    box-shadow: none;
+    background: white;
+}
+h1 {
+    text-align: center;
+}
+.parent {
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background: pink;
+    padding-right: 10px;
+
+}
+h2 {
+    text-align: center;
+}
