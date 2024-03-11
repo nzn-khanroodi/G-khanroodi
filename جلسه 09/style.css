@@ -1,0 +1,58 @@
+body{
+    direction: rtl;
+}
+.intro {
+    direction: ltr;
+    font-size:25px ;
+    color: green;
+}
+.parent{
+    width: 400px;
+    height: 400px;
+    border: 2px solid blue;
+    background-image: url(IMG_20210824_193541.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.main {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    padding: auto;
+    border: 2px solid black;
+    background: linear-gradient(#afd3e2,#7af1fb,#19a7ce)
+
+}
+nav{
+    direction: ltr;
+    font-size: 22px;
+    border: 2px solid rgb(251, 69, 193);
+    font-style: oblique;
+    text-transform: capitalize;
+    color: blueviolet;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+
+}
+ul{
+    list-style-type:circle ;
+    text-align: right;
+    list-style-position: inside;
+}
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+nav ul li {
+    display: inline;
+    padding: 10px;
+}
