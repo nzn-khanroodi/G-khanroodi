@@ -1,0 +1,283 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Inter_VariableFont;
+    src: url("Inter-VariableFont_slnt\,wght.ttf");
+}
+body {
+    width: 90vw;
+    font-family: "Inter_VariableFont";
+    margin: auto;
+    padding-bottom: 50px;
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px 40px 0px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #aaa;
+}
+#Meno img {
+    display: none;
+}
+#heding{
+    display: flex;
+    flex-direction: row;
+}
+#heding > h1{
+    flex: 1;
+}
+#part{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    flex: 2.5;
+    padding-right: 20px;
+}
+#puzzle{
+    flex: 1.2;
+}
+#puzzle img{
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+h1{
+    display: flex;
+    flex: 1;
+    font-weight: 300;
+    font-size: 25px;
+    padding-right: 10px;
+}
+#text.p{
+    flex: 1.5;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #9293a5;
+}
+button{
+    width: 50%;
+    min-width: 150px;
+    height: 35px;
+    margin: 15px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+aside {
+    flex: 1;
+    background-color: #00001a;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+aside h2 {
+    color: #f4b04b;
+}
+aside h3 {
+    color: white;
+    padding-bottom: 7px;
+    font-size: 16px;
+}
+aside p {
+    color: #9293a5;
+    line-height: 1.5em;
+    font-size: 13px;
+}
+
+aside hr {
+    border-top: 1px solid #9293a5;
+    border-bottom: 1px solid #9293a5;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+
+}
+footer img {
+    width: 80px;
+    max-height: 102px;
+    padding-right: 10px;
+}
+footer h4 {
+    color: #c9c6cf;
+    font-size: 23px;
+    margin: 5px;
+    
+}
+footer h3{
+    font-size: 14px;
+    padding: 5px 0px;
+    
+}
+footer p {
+    font-size: 11px;
+    color: #9293a5;
+    line-height: 18px;
+}
+footer > div {
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    cursor: pointer;
+}
+
+footer > div > h4 {
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 640px) {
+    body {
+        width: 100%;
+        padding: 0px 10px 50px;
+    }
+
+    /********* header *********/
+
+    #Meno {
+        position: relative;
+    }
+
+    nav {
+        position: absolute;
+        right: 0px;
+        background-color: #00001a;
+        padding: 15px 0px;
+        display: none;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 5px 50px;
+    }
+
+    nav ul li:hover {
+        background-color: rgb(187, 0, 0);
+    }
+
+    nav ul li:hover a {
+        color: white;
+    }
+
+    /* #Menu > img:hover {
+        background: url("./images/icon-menu-close.svg");
+    } */
+
+    #Meno > img:hover + nav,
+    #Meno > nav:hover {
+        display: block;
+    }
+
+    #Meno img {
+        display: block;
+    }
+
+    /********* Main **********/
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    #text.p {
+        display: block;
+    }
+
+    #h1 {
+        font-weight: 300;
+        font-size: 25px;
+        padding: 0;
+    }
+
+    #text.p {
+        display: block;
+        padding: 20px 0px;
+    }
+
+    #text.p button {
+        margin-top: 20px;
+        width: 33%;
+    }
+
+    /************* aside **************/
+
+    aside {
+        display: block;
+        padding: 20px 40px;
+    }
+
+    aside hr {
+        margin: 20px 0px;
+    }
+
+    /********** footer ************/
+    footer {
+        display: block;
+    }
+
+    footer > div {
+        margin: 20px 0px;
+    }
+}
+
+@media (max-width: 960px) and (min-width: 641px) {
+    h1 {
+        font-size: 28px;
+        flex: 1.2;
+    }
+
+    #text.p button {
+        margin-top: 20px;
+    }
+
+    article {
+        flex: 1.7;
+    }
+}
+
